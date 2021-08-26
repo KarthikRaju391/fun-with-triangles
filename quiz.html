@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fun with triangles</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <ul class="nav-list">
+          <li class="nav-list-items">
+            <a class="nav-list-links" href="./index.html">Is Triangle?</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" href="./quiz.html">Triangle Quiz</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" href="./hypotenuse.html">Hypotenuse</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" href="./area.html">Area</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Triangle Quiz</h1>
+    <form class= "quiz-form">
+       <div class="question-container">
+          <p>What is the third angle for the triangle where angle 1 = 45° and angle 2 = 45°?</p>
+          <label><input type="radio" value="45°" name="question1">45°</label>
+          <label><input type="radio" value="60°" name="question1">60°</label>
+          <label><input type="radio" value="90°" name="question1">90°</label>
+       </div>
+       <div class="question-container">
+         <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+         <label><input type="radio" value="obtuse" name="question2">obtuse</label>
+         <label><input type="radio" value="acute" name="question2">acute</label>
+         <label><input type="radio" value="right angled" name="question2">right angled</label>
+      </div>
+      <button id="submit-answers-btn" type="submit">Submit</button>
+    </form>
+    <h3 id="output"></h3>
+    <script src="quiz.js"></script>
+  </body>
+</html>

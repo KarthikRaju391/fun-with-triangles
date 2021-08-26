@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fun with triangles</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <ul class="nav-list">
+          <li class="nav-list-items">
+            <a class="nav-list-links" href="./index.html">Is Triangle?</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" href="./quiz.html">Triangle Quiz</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" href="./hypotenuse.html">Hypotenuse</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" href="./area.html">Area</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Check Hypotenuse</h1>
+      <h2 class="hypotenuseFormula">
+        Length of Hypotenuse = sqrt(a<sup>2</sup> + b<sup>2</sup>)
+      </h2>
+      <div class="input-section">
+        <label for="a">Enter Length of a</label>
+        <input type="number" placeholder="in cm" id="lengthA" />
+        <label for="b">Enter Length of b</label>
+        <input type="number" placeholder="in cm" id="lengthB" />
+        <button id="check-hypotenuse-btn" class="check-hypotenuse">
+          Check Hypotenuse
+        </button>
+        <h3 id="output-value" class="output-section"></h3>
+      </div>
+    </main>
+    <script src="hypotenuse.js"></script>
+  </body>
+</html>

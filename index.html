@@ -12,7 +12,7 @@
       <nav class="nav-container">
         <ul class="nav-list">
           <li class="nav-list-items">
-            <a class="nav-list-links" href="./">Is Triangle?</a>
+            <a class="nav-list-links active" href="./">Is Triangle?</a>
           </li>
           <li class="nav-list-items">
             <a class="nav-list-links" href="./quiz.html">Triangle Quiz</a>
@@ -27,19 +27,29 @@
       </nav>
     </header>
     <main class="container">
-      <h2 class="angles-input">Enter three angles:</h2>
-      <div class="input">
-        <label for="angle1-input">Enter angle 1</label>
+      <h1 class="angles-input">Enter three angles</h1>
+      <div class="input-section">
+        <label for="angle1-input" class="angle-label">Enter angle 1</label>
         <input class="angle-input" placeholder="in degrees" type="number" />
-        <label for="angle2-input">Enter angle 2</label>
+        <label for="angle2-input" class="angle-label">Enter angle 2</label>
         <input class="angle-input" placeholder="in degrees" type="number" />
-        <label for="angle3-input">Enter angle 3</label>
+        <label for="angle3-input" class="angle-label">Enter angle 3</label>
         <input class="angle-input" placeholder="in degrees" type="number" />
       </div>
-      <button id="check-btn">Check</button>
+      <div class="container"><button id="check-btn" class="check-ans">Check</button></div>
       <h3 class="is-triangle-output" id="triangle-output"></h3>
       <span id="hint" class="hide-hint">(show hint)</span>
     </main>
+    <footer class="container footer">
+      <div class="d-flex">
+        <p class="text-center made-by">Made by <a target="_blank" href="http://karthikraju.netlify.app">Karthik Raju<a><p>
+        <div class="social-links">
+          <a target="_blank" href="http://twitter.com/karthikraju391">Twitter</a>
+          <a target="_blank" href="http://github.com/KarthikRaju391">Github</a>
+          <a target="_blank" href="https://linkedin.com/in/karthik-s-raju/">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
     <script src="./src/app.js"></script>
   </body>
 </html>

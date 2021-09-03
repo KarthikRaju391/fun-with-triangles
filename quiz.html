@@ -15,7 +15,7 @@
             <a class="nav-list-links" href="./index.html">Is Triangle?</a>
           </li>
           <li class="nav-list-items">
-            <a class="nav-list-links" href="./quiz.html">Triangle Quiz</a>
+            <a class="nav-list-links active" href="./quiz.html">Triangle Quiz</a>
           </li>
           <li class="nav-list-items">
             <a class="nav-list-links" href="./hypotenuse.html">Hypotenuse</a>
@@ -27,22 +27,38 @@
       </nav>
     </header>
     <h1>Triangle Quiz</h1>
-    <form class= "quiz-form">
-       <div class="question-container">
-          <p>What is the third angle for the triangle where angle 1 = 45° and angle 2 = 45°?</p>
-          <label><input type="radio" value="45°" name="question1">45°</label>
-          <label><input type="radio" value="60°" name="question1">60°</label>
-          <label><input type="radio" value="90°" name="question1">90°</label>
-       </div>
-       <div class="question-container">
-         <p>If a triangle has an angle of 90 degrees, what is it called?</p>
-         <label><input type="radio" value="obtuse" name="question2">obtuse</label>
-         <label><input type="radio" value="acute" name="question2">acute</label>
-         <label><input type="radio" value="right angled" name="question2">right angled</label>
-      </div>
-      <button id="submit-answers-btn" type="submit">Submit</button>
-    </form>
+    <div class="input-section container">
+      <form class= "quiz-form">
+         <div class="question-container">
+            <p class="questions">What is the third angle for the triangle where angle 1 = 45° and angle 2 = 45°?</p>
+            <div class="options">
+              <label class="angles"><input type="radio" value="45°" name="question1">45°</label>
+              <label class="angles"><input type="radio" value="60°" name="question1">60°</label>
+              <label class="angles"><input type="radio" value="90°" name="question1">90°</label>
+            </div>
+         </div>
+         <div class="question-container">
+           <p class="questions text-center">If a triangle has an angle of 90 degrees, what is it called?</p>
+           <div class="options">
+             <label class="values"><input type="radio" value="obtuse" name="question2">obtuse</label>
+             <label class="values"><input type="radio" value="acute" name="question2">acute</label>
+             <label class="values"><input type="radio" value="right angled" name="question2">right angled</label>
+           </div>
+        </div>
+        <div class="container"><button class="submit-btn" id="submit-answers-btn" type="submit">Submit</button></div>
+      </form>
+    </div>
     <h3 id="output"></h3>
+    <footer class="container footer">
+      <div class="d-flex">
+        <p class="text-center made-by">Made by <a target="_blank" href="http://karthikraju.netlify.app">Karthik Raju<a><p>
+        <div class="social-links">
+          <a target="_blank" href="http://twitter.com/karthikraju391">Twitter</a>
+          <a target="_blank" href="http://github.com/KarthikRaju391">Github</a>
+          <a target="_blank" href="https://linkedin.com/in/karthik-s-raju/">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
     <script src="./src/quiz.js"></script>
   </body>
 </html>

@@ -21,7 +21,7 @@
             <a class="nav-list-links" href="./hypotenuse.html">Hypotenuse</a>
           </li>
           <li class="nav-list-items">
-            <a class="nav-list-links" href="./area.html">Area</a>
+            <a class="nav-list-links active" href="./area.html">Area</a>
           </li>
         </ul>
       </nav>
@@ -30,14 +30,24 @@
       <h1>Check Area of Triangle</h1>
       <h2 class="areaFormula">Area of Triangle = 1/2(base*height)</h2>
       <div class="input-section">
-        <label for="base">Enter base</label>
-        <input type="number" placeholder="in cm" id="base" />
-        <label for="height">Enter height</label>
-        <input type="number" placeholder="in cm" id="height" />
+        <label for="base" class="base-label">Enter base</label>
+        <input type="number" placeholder="in cm" class="base-input" id="base" />
+        <label for="height" class="height-label">Enter height</label>
+        <input type="number" placeholder="in cm" class="height-input" id="height" />
         <button id="check-area-btn" class="check-area">Check Area</button>
         <h3 id="output-value" class="output-section"></h3>
       </div>
     </main>
+    <footer class="container footer">
+      <div class="d-flex">
+        <p class="text-center made-by">Made by <a target="_blank" href="http://karthikraju.netlify.app">Karthik Raju<a><p>
+        <div class="social-links">
+          <a target="_blank" href="http://twitter.com/karthikraju391">Twitter</a>
+          <a target="_blank" href="http://github.com/KarthikRaju391">Github</a>
+          <a target="_blank" href="https://linkedin.com/in/karthik-s-raju/">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
     <script src="./src/area.js"></script>
   </body>
 </html>

@@ -18,7 +18,7 @@
             <a class="nav-list-links" href="./quiz.html">Triangle Quiz</a>
           </li>
           <li class="nav-list-items">
-            <a class="nav-list-links" href="./hypotenuse.html">Hypotenuse</a>
+            <a class="nav-list-links active" href="./hypotenuse.html">Hypotenuse</a>
           </li>
           <li class="nav-list-items">
             <a class="nav-list-links" href="./area.html">Area</a>
@@ -32,16 +32,26 @@
         Length of Hypotenuse = sqrt(a<sup>2</sup> + b<sup>2</sup>)
       </h2>
       <div class="input-section">
-        <label for="a">Enter Length of a</label>
-        <input type="number" placeholder="in cm" id="lengthA" />
-        <label for="b">Enter Length of b</label>
-        <input type="number" placeholder="in cm" id="lengthB" />
+        <label for="a" class="length-label">Enter Length of a</label>
+        <input type="number" class="length-input" placeholder="in cm" id="lengthA" />
+        <label for="b" class="length-label">Enter Length of b</label>
+        <input type="number" class="length-input" placeholder="in cm" id="lengthB" />
         <button id="check-hypotenuse-btn" class="check-hypotenuse">
           Check Hypotenuse
         </button>
         <h3 id="output-value" class="output-section"></h3>
       </div>
     </main>
+    <footer class="container footer">
+      <div class="d-flex">
+        <p class="text-center made-by">Made by <a target="_blank" href="http://karthikraju.netlify.app">Karthik Raju<a><p>
+        <div class="social-links">
+          <a target="_blank" href="http://twitter.com/karthikraju391">Twitter</a>
+          <a target="_blank" href="http://github.com/KarthikRaju391">Github</a>
+          <a target="_blank" href="https://linkedin.com/in/karthik-s-raju/">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
     <script src="./src/hypotenuse.js"></script>
   </body>
 </html>

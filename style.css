@@ -124,6 +124,10 @@ h3 {
   padding: 1em;
 }
 
+.f-quiz{
+  position: relative;
+}
+
 .made-by {
   font-size: large;
   font-weight: 400;
